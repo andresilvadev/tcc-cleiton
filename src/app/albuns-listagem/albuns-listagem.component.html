@@ -1,0 +1,25 @@
+<div class="product-list">
+
+	<h1>Total de imagens: {{ totalRegistros }} </h1>
+	<div class="loader" *ngIf="showLoader"></div> 
+
+	<div class="nav">		
+		<button (click)="listarMais()">Carregar mais +5000 </button>
+	</div>
+
+	<ul class="lista-de-albuns">
+		<li *ngFor="let album of albuns; index as i;">
+			<article>
+				<h4 class="title-album">
+					Titulo: {{ album.title }} <br>	
+					index: {{i+1}}/{{albuns.length}}			
+				</h4>
+				<a href="{{ album.url }}">
+					<img src="{{ album.url }}" alt="{{ album.title }}" /> 
+				</a>
+			</article>
+		</li>
+	</ul>
+
+
+</div>

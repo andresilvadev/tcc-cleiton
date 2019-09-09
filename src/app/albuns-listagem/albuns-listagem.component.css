@@ -1,0 +1,94 @@
+.nav {
+  width: 100%;
+  height: 50px;
+  text-align: left;
+  margin-top: 10px;
+  margin-bottom: 15px;
+}
+
+.nav button {
+  padding: 10px;
+  background-color: rgb(84, 113, 192);  
+  border: 0;
+  color: #fff;
+  cursor: pointer;
+}
+
+.nav button:hover, .nav button:focus {
+  background-color: rgb(29, 72, 192); 
+} 
+
+.title-album {
+  margin-bottom: 5px;
+}
+
+p:first-letter,
+h1:first-letter,
+h2:first-letter,
+h3:first-letter,
+h4:first-letter {
+  text-transform: uppercase;
+}
+
+.product-list {
+  max-width: 700px;
+  margin: 20px auto 0;
+  padding: 0 20px;
+}
+
+.product-list article {
+  background: #fff;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+.product-list .actions {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.product-list .actions button {
+  padding: 10px;
+  border-radius: 5px;
+  border: 0;
+  background: #da552f;
+  color: #fff;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.product-list .actions button[disabled] {
+  opacity: 0.5;
+  cursor: default;
+}
+
+.product-list .actions button:hover {
+  opacity: 0.7;
+}
+
+.product-list .actions button[disabled]:hover {
+  opacity: 0.5;
+}
+
+.loader {
+  border: 10px solid #f3f3f3; /* Light grey */
+  border-top: 10px solid #3498db; /* Blue */
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  animation: spin 2s linear infinite;
+  float: right;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+.lista-de-albuns li{
+  list-style: none;
+}
